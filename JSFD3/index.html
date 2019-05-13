@@ -1,0 +1,65 @@
+<html>
+
+	<header>
+
+		<title>JSFD lesson 2</title>
+
+		<link rel="stylesheet" href="./style.css">
+
+		<meta charset="UTF-8">
+
+	</header>
+
+	<body>
+
+		<section class="options">
+
+			<div class="option">
+				<input type="text" name="sentence" placeholder="Your text" />
+			</div>
+
+			<div class="option">
+				<label>Type size: <span class="typesize-output">64px</span></label>
+				<input type="range" name="typesize" min=12 max=200 value=64>
+			</div>
+
+			<div class="option">
+				<label>Leading: <span class="leading-output">1.5</span></label>
+				<input type="range" name="leading" min=0.75 max=2.5 value=1.5 step=0.1>
+			</div>
+
+			<div class="option">
+				<label for="italic">Italic</label>
+				<input type="checkbox" id="italic" name="italic">
+			</div>
+
+			<div class="option">
+				<label>Typeface</label>
+				<select name="typeface">
+					<option value="IBM Plex Mono">IBM Plex Mono</option>
+					<option value="Poppins">Poppins</option>
+				</select>
+			</div>
+
+			<div class="option">
+				<label>Weight: <span class="weight-output">200</span></label>
+				<input type="range" name="weight" min=100 max=900 value=200 step=100>
+			</div>
+
+			<div class="option">
+				<div class="colors">
+					<div style="background: #000000; color: #ffffff;" class="selected">a</div>
+					<div style="background: #ffffff; color: #2a2a2a;">a</div>
+					<div style="background: #FFFF00; color: #2a2a2a;">a</div>
+				</div>
+			</div>
+
+		</section>
+
+		<textarea class="output">The quick brown fox jumps over the lazy dog</textarea>
+
+		<script type="text/javascript" src="typechecker.js"></script>
+
+	</body>
+
+</html>

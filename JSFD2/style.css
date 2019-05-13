@@ -1,0 +1,127 @@
+@keyframes fade {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@font-face {
+	font-family: "IBM Plex Mono";
+	src: url('assets/ibm-plex-mono.woff2'), url('assets/ibm-plex-mono.woff');
+}
+
+body {
+	font-family: "IBM Plex Mono";
+	font-size: 18px;
+	line-height: 30px;
+	color: #2a2a2a;
+	background-color: #FFEFEF;
+	transition: all 0.3s;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: -240px;
+	width: 240px;
+	height: 100vh;
+	background-color: #FFCFCF;
+	font-family: "Acumin Pro Wide";
+	font-size: 20px;
+	line-height: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transition: left 0.3s;
+	z-index: 10;
+}
+
+nav.open {
+	left: 0;
+}
+
+nav a {
+	color: #260088;
+	text-decoration: none;
+	margin: 5px 0px 0px 32px;
+}
+
+main {
+	position: relative;
+	z-index: 1;
+	background-color: #ffffff;
+	min-height: 100vh;
+	transition: all 0.3s;
+}
+
+main.open {
+	transform: translate(240px, 0);
+}
+
+a.toggle-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 24px;
+	text-decoration: none;
+	color: #333333;
+}
+
+a.toggle-nav img {
+	margin: 0 15px 0 0;
+	vertical-align: middle;
+}
+
+section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+section div {
+	width: 350px;
+}
+
+section div.content {
+	margin: 0 0 0 60px;
+}
+
+h1 {
+	font-family: "acumin pro wide";
+	font-size: 36px;
+}
+
+p {
+	padding-bottom: 20px; 
+}
+
+a.button {
+	display: inline-block;
+	background-color: teal;
+	color: white;
+	text-decoration: none;
+	padding: 15px 35px 15px 35px;
+	border-radius: 2px;
+}
+
+div.slides {
+	height: 475px;
+	position: relative;
+}
+
+div.slides:hover img {
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+div.slides img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 0.3s;
+}
+
+div.slides img:first-child {
+	z-index: 1;
+}

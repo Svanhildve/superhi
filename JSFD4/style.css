@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+@font-face {
+	font-family: "IBM Plex Mono";
+	src: url('assets/IBMPlexMono-Regular.woff2'), url('assets/IBMPlexMono-Regular.woff');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "IBM Plex Mono";
+	src: url('assets/IBMPlexMono-Italic.woff2'), url('assets/IBMPlexMono-Italic.woff');
+	font-style: italic;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "IBM Plex Mono";
+	src: url('assets/IBMPlexMono-Bold.woff2'), url('assets/IBMPlexMono-Bold.woff');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "HK Grotesk";
+	src: url('assets/hk-grotesk.woff2'), url('assets/hk-grotesk.woff');
+}
+
+body {
+	font-family: "IBM Plex Mono";
+	font-size: 12px;
+	line-height: 1.6;
+	color: #2a2a2a;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+	font-family: "HK Grotesk";
+}
+
+header {
+	position: fixed;
+	top: 36px;
+	left: 36px;
+	z-index: 1;
+	transition: all 0.2s;
+}
+
+header.white {
+	color: #ffffff;
+	transition: all 0.2s;
+}
+
+section {
+	background-color: #c8dee0;
+	min-height: calc(100vh - 160px);
+	padding: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.content {
+	position: relative;
+}
+
+div.square {
+	width: 100px;
+	height: 100px;
+	background: #5982a0;
+	position: absolute;
+	top: 50px;
+	left: -50px;
+}
+
+div.content img {
+	position: relative;
+}
+
+div.circle {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: #d54156;
+	position: absolute;
+	bottom: 50px;
+	right: -50px;
+}
+
+section.s2 {
+	background: #c5c5c5;
+}
+
+section.s2 div.square {
+	background: #d6ac35;
+}
+
+section.s2 div.circle {
+	background: #be3c52;
+}
+
+section.s3 {
+	background: #292121;
+}
+
+section.s3 div.square {
+	background: #5f3736;
+}
+
+section.s3 div.circle {
+	background: #6e5f67;
+}
+
+section.s4 {
+	background: #f3f1f2;
+}
+
+section.s4 div.square {
+	background: #d54156;
+}
+
+section.s4 div.circle {
+	background: #5982a0;
+}
+
+.progress {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 4px;
+	background: #d54156;
+	z-index: 1;
+	transition: all 0.2s;
+}
+
+div.progress.white {
+	background: #ffffff;
+	transition: all 0.2s;
+}
